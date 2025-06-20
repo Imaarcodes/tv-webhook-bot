@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: tv-webhook-bot
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: "python main.py"
+    envVars:
+      - key: FLASK_ENV
+        value: production
